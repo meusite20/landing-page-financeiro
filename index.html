@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Financeiro - Organize sua Vida Financeira</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .pulse-animation {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="smooth-scroll">
+  <div class="w-full min-h-full"><!-- Hero Section -->
+   <section class="gradient-bg text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+     <h1 id="main-headline" class="text-5xl md:text-6xl font-bold mb-6 leading-tight">Tome Controle Total do Seu Dinheiro em Apenas 5 Minutos Por Dia</h1>
+     <p id="subheadline" class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">A plataforma completa que organiza suas despesas, multiplica sua economia e transforma seu salário em liberdade financeira</p><button id="cta-hero" class="bg-white text-purple-700 font-bold text-xl px-12 py-5 rounded-full hover:bg-purple-50 transition shadow-2xl pulse-animation"> Comece Grátis Agora </button>
+     <p class="mt-6 text-sm opacity-80">✓ Sem cartão de crédito • ✓ Cancelamento gratuito • ✓ Resultados em 7 dias</p>
+    </div>
+   </section><!-- Problem Section -->
+   <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Você Está Cansado Disso?</h2>
+     <p class="text-center text-gray-600 mb-12 text-lg">Se você se identifica com algum desses problemas, você não está sozinho...</p>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-500">
+       <div class="text-4xl mb-4">
+        😰
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Fim do Mês Sempre no Vermelho</h3>
+       <p class="text-gray-600">Você trabalha duro, mas nunca sabe para onde seu dinheiro foi. O salário acaba antes do mês terminar.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-500">
+       <div class="text-4xl mb-4">
+        🤔
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Gastos Invisíveis</h3>
+       <p class="text-gray-600">Aquelas assinaturas esquecidas, comprinhas "pequenas" que viram uma fortuna no final do mês.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-500">
+       <div class="text-4xl mb-4">
+        📊
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Planilhas Confusas e Chatas</h3>
+       <p class="text-gray-600">Você tentou organizar no Excel, no papel, mas é complicado demais e você sempre desiste.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-500">
+       <div class="text-4xl mb-4">
+        💸
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Zero Reserva de Emergência</h3>
+       <p class="text-gray-600">Qualquer imprevisto vira desespero. Você não consegue poupar porque não sabe como.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Solution Section -->
+   <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800">A Solução que Você Precisa Está Aqui</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">Nossa plataforma é um sistema inteligente de controle financeiro que organiza automaticamente suas despesas, mostra exatamente para onde seu dinheiro está indo e te ajuda a economizar sem esforço.</p>
+     </div>
+     <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-12 rounded-3xl shadow-2xl">
+      <h3 class="text-3xl font-bold mb-8 text-center">Como Funciona (É Muito Simples)</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+       <div class="text-center">
+        <div class="bg-white text-purple-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+         1
+        </div>
+        <h4 class="text-xl font-bold mb-3">Cadastre Suas Despesas</h4>
+        <p class="opacity-90">Em segundos, registre seus gastos e receitas de forma simples e rápida</p>
+       </div>
+       <div class="text-center">
+        <div class="bg-white text-purple-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+         2
+        </div>
+        <h4 class="text-xl font-bold mb-3">Visualize Tudo Claramente</h4>
+        <p class="opacity-90">Veja gráficos intuitivos que mostram exatamente para onde seu dinheiro vai</p>
+       </div>
+       <div class="text-center">
+        <div class="bg-white text-purple-600 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+         3
+        </div>
+        <h4 class="text-xl font-bold mb-3">Economize Automaticamente</h4>
+        <p class="opacity-90">Receba alertas inteligentes e dicas personalizadas para reduzir gastos</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Features Section -->
+   <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Tudo Que Você Precisa em Um Só Lugar</h2>
+     <p class="text-center text-gray-600 mb-16 text-lg">Funcionalidades poderosas que realmente fazem diferença no seu dia a dia</p>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        📊
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Dashboard Intuitivo</h3>
+       <p class="text-gray-600">Visualize todas as suas finanças em uma tela limpa e fácil de entender</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        💰
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Controle Total de Despesas</h3>
+       <p class="text-gray-600">Registre gastos e receitas em segundos, onde você estiver</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        📅
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Planejamento Mensal</h3>
+       <p class="text-gray-600">Defina orçamentos por categoria e acompanhe em tempo real</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        🏷️
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Categorias Personalizadas</h3>
+       <p class="text-gray-600">Organize do seu jeito com categorias que fazem sentido para você</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        📈
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Relatórios Inteligentes</h3>
+       <p class="text-gray-600">Gráficos e análises que revelam seus padrões de consumo</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        🎯
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Metas Financeiras</h3>
+       <p class="text-gray-600">Defina objetivos e acompanhe seu progresso automaticamente</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        🔔
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Alertas Automáticos</h3>
+       <p class="text-gray-600">Receba notificações quando estiver gastando demais</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        📱
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">Acesso Mobile</h3>
+       <p class="text-gray-600">Controle suas finanças de qualquer lugar, em qualquer dispositivo</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+       <div class="text-4xl mb-4">
+        🔒
+       </div>
+       <h3 class="text-xl font-bold mb-3 text-gray-800">100% Seguro</h3>
+       <p class="text-gray-600">Seus dados protegidos com criptografia de nível bancário</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Benefits Section -->
+   <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">O Que Você Vai Conquistar</h2>
+     <p class="text-center text-gray-600 mb-16 text-lg">Transformações reais que vão mudar sua relação com o dinheiro</p>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Reduza Gastos em Até 30%</h3>
+        <p class="text-gray-600">Identifique e elimine despesas desnecessárias automaticamente</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Economize Todo Mês</h3>
+        <p class="text-gray-600">Finalmente consiga guardar dinheiro de forma consistente</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Organização Total</h3>
+        <p class="text-gray-600">Saiba exatamente onde está cada centavo do seu dinheiro</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Clareza Financeira</h3>
+        <p class="text-gray-600">Entenda seu fluxo de dinheiro como nunca antes</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Decisões Inteligentes</h3>
+        <p class="text-gray-600">Tenha dados concretos para tomar melhores decisões financeiras</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 bg-green-50 p-6 rounded-xl">
+       <div class="text-3xl">
+        ✅
+       </div>
+       <div>
+        <h3 class="text-xl font-bold mb-2 text-gray-800">Controle do Seu Salário</h3>
+        <p class="text-gray-600">Faça seu dinheiro durar o mês inteiro, todo mês</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Before/After Section -->
+   <section class="bg-gradient-to-r from-red-50 to-green-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">A Transformação que Espera por Você</h2>
+     <div class="grid md:grid-cols-2 gap-12">
+      <div class="bg-white p-10 rounded-3xl shadow-xl border-4 border-red-200">
+       <h3 class="text-2xl font-bold mb-6 text-red-600 text-center">😔 ANTES</h3>
+       <ul class="space-y-4">
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Dinheiro acabando antes do fim do mês</span></li>
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Sem ideia de para onde o dinheiro vai</span></li>
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Estresse e ansiedade financeira constante</span></li>
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Impossível economizar ou fazer reservas</span></li>
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Decisões financeiras no escuro</span></li>
+        <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">❌</span> <span class="text-gray-700">Medo de abrir o aplicativo do banco</span></li>
+       </ul>
+      </div>
+      <div class="bg-white p-10 rounded-3xl shadow-xl border-4 border-green-400">
+       <h3 class="text-2xl font-bold mb-6 text-green-600 text-center">😊 DEPOIS</h3>
+       <ul class="space-y-4">
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Dinheiro durando o mês inteiro com folga</span></li>
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Controle total de cada centavo gasto</span></li>
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Paz de espírito e tranquilidade financeira</span></li>
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Economizando todos os meses automaticamente</span></li>
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Decisões baseadas em dados reais</span></li>
+        <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <span class="text-gray-700">Confiança total na sua situação financeira</span></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- Social Proof Section -->
+   <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Veja o Que Nossos Usuários Dizem</h2>
+     <p class="text-center text-gray-600 mb-16 text-lg">Milhares de pessoas já transformaram suas vidas financeiras</p>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-purple-50 p-8 rounded-2xl shadow-lg">
+       <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+         M
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800">Marina Silva</h4>
+         <div class="text-yellow-500">
+          ⭐⭐⭐⭐⭐
+         </div>
+        </div>
+       </div>
+       <p class="text-gray-700 italic">"Em 2 meses consegui economizar R$ 1.200 que eu nem sabia que estava gastando! A plataforma é incrivelmente fácil de usar."</p>
+      </div>
+      <div class="bg-purple-50 p-8 rounded-2xl shadow-lg">
+       <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+         R
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800">Roberto Mendes</h4>
+         <div class="text-yellow-500">
+          ⭐⭐⭐⭐⭐
+         </div>
+        </div>
+       </div>
+       <p class="text-gray-700 italic">"Finalmente consigo ver para onde meu dinheiro vai. Reduzi 40% dos meus gastos desnecessários no primeiro mês!"</p>
+      </div>
+      <div class="bg-purple-50 p-8 rounded-2xl shadow-lg">
+       <div class="flex items-center mb-4">
+        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+         C
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800">Carla Oliveira</h4>
+         <div class="text-yellow-500">
+          ⭐⭐⭐⭐⭐
+         </div>
+        </div>
+       </div>
+       <p class="text-gray-700 italic">"Sou péssima com planilhas. Essa plataforma é tão simples que uso todo dia. Já alcancei minha primeira meta de R$ 5.000!"</p>
+      </div>
+     </div>
+     <div class="mt-16 bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-12 rounded-3xl text-center">
+      <h3 class="text-3xl font-bold mb-4">Mais de 50.000 Pessoas</h3>
+      <p class="text-xl opacity-90 mb-6">Já organizaram suas finanças e conquistaram estabilidade financeira</p>
+      <div class="flex justify-center items-center space-x-8 text-2xl">
+       <div>
+        ⭐⭐⭐⭐⭐
+       </div>
+       <div class="font-bold">
+        4.9/5.0
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Offer Section -->
+   <section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Comece Sua Transformação Hoje</h2>
+     <p class="text-center text-gray-600 mb-16 text-lg">Investimento acessível que se paga sozinho</p>
+     <div class="bg-white p-12 rounded-3xl shadow-2xl border-4 border-purple-400">
+      <div class="text-center mb-8">
+       <h3 id="plan-name" class="text-3xl font-bold mb-4 text-gray-800">Plano Premium Anual</h3>
+       <div class="mb-6"><span class="text-gray-400 line-through text-2xl">R$ 49,90/mês</span>
+        <div id="plan-price" class="text-6xl font-bold text-purple-600 my-4">
+         R$ 29,90/mês
+        </div>
+        <p class="text-gray-600">ou R$ 358,80 à vista (economia de 40%)</p>
+       </div>
+      </div>
+      <div class="space-y-4 mb-10">
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Acesso completo a todas as funcionalidades</span>
+       </div>
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Dashboard inteligente com análises em tempo real</span>
+       </div>
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Alertas automáticos e dicas personalizadas</span>
+       </div>
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Relatórios ilimitados e exportação de dados</span>
+       </div>
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Suporte prioritário por chat e email</span>
+       </div>
+       <div class="flex items-start"><span class="text-green-500 mr-3 text-2xl">✓</span> <span class="text-gray-700 text-lg">Atualizações e novos recursos inclusos</span>
+       </div>
+      </div>
+      <div class="bg-green-50 p-6 rounded-xl mb-8 border-2 border-green-300">
+       <h4 id="guarantee-text" class="font-bold text-xl text-gray-800 mb-2 text-center">🛡️ Garantia Incondicional de 30 Dias</h4>
+       <p class="text-gray-700 text-center">Se você não economizar pelo menos 3x o valor investido ou não ficar satisfeito por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+      </div><button id="cta-offer" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-2xl py-6 rounded-full hover:from-purple-700 hover:to-indigo-700 transition shadow-2xl pulse-animation"> Quero Organizar Minhas Finanças Agora </button>
+      <p class="text-center mt-6 text-sm text-gray-500">✓ Pagamento 100% seguro • ✓ Acesso imediato • ✓ Cancele quando quiser</p>
+     </div>
+    </div>
+   </section><!-- FAQ Section -->
+   <section class="bg-white py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">Perguntas Frequentes</h2>
+     <p class="text-center text-gray-600 mb-16 text-lg">Tire suas dúvidas antes de começar</p>
+     <div class="space-y-6">
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">🔒 Meus dados estão seguros?</h3>
+       <p class="text-gray-700">Absolutamente! Utilizamos criptografia de nível bancário e nunca compartilhamos seus dados. Você tem controle total sobre suas informações e pode exportá-las ou deletá-las a qualquer momento.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">💳 Como funciona o pagamento?</h3>
+       <p class="text-gray-700">Aceitamos cartão de crédito, PIX e boleto bancário. O pagamento é processado de forma segura por plataformas certificadas. Você pode escolher entre plano mensal ou anual com desconto.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">📱 Funciona no celular?</h3>
+       <p class="text-gray-700">Sim! Nossa plataforma é 100% responsiva e funciona perfeitamente em celulares, tablets e computadores. Você pode acessar de qualquer lugar, a qualquer hora.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">⏱️ Quanto tempo leva para ver resultados?</h3>
+       <p class="text-gray-700">A maioria dos usuários começa a identificar gastos desnecessários na primeira semana. Em 30 dias, você já terá uma visão completa dos seus padrões financeiros e estará economizando de forma consistente.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">❌ Posso cancelar quando quiser?</h3>
+       <p class="text-gray-700">Sim! Não há fidelidade ou multa por cancelamento. Você pode cancelar sua assinatura a qualquer momento com apenas um clique. Se cancelar nos primeiros 30 dias, devolvemos 100% do valor.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">🤝 Tem suporte se eu precisar de ajuda?</h3>
+       <p class="text-gray-700">Com certeza! Oferecemos suporte por chat ao vivo e email. Assinantes Premium têm atendimento prioritário. Nossa equipe está pronta para ajudar você a aproveitar ao máximo a plataforma.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">👥 Posso compartilhar minha conta?</h3>
+       <p class="text-gray-700">A conta é individual, mas oferecemos recursos de compartilhamento familiar em planos especiais. Entre em contato com nosso suporte para saber mais sobre controle financeiro para casais e famílias.</p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-2xl">
+       <h3 class="text-xl font-bold mb-3 text-gray-800">📊 Preciso ter conhecimento de finanças?</h3>
+       <p class="text-gray-700">Não! A plataforma foi criada justamente para quem não tem experiência com controle financeiro. Tudo é intuitivo e fácil de usar. Se você sabe usar WhatsApp, vai usar nossa plataforma tranquilamente.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Final CTA Section -->
+   <section class="gradient-bg text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-4xl md:text-5xl font-bold mb-6">Não Deixe Mais Um Mês Passar no Vermelho</h2>
+     <p class="text-xl mb-10 opacity-90 max-w-2xl mx-auto">Junte-se a mais de 50.000 pessoas que já tomaram controle do seu dinheiro e conquistaram estabilidade financeira</p><button id="cta-final" class="bg-white text-purple-700 font-bold text-2xl px-12 py-6 rounded-full hover:bg-purple-50 transition shadow-2xl pulse-animation mb-6"> Sim, Quero Controlar Minhas Finanças Agora! </button>
+     <p class="text-sm opacity-80">Comece grátis por 7 dias • Sem compromisso • Cancele quando quiser</p>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+     <p class="text-gray-400 mb-4">© 2024 Plataforma de Controle Financeiro. Todos os direitos reservados.</p>
+     <div class="flex justify-center space-x-6 text-sm"><a href="#" class="text-gray-400 hover:text-white transition">Termos de Uso</a> <a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a> <a href="#" class="text-gray-400 hover:text-white transition">Contato</a>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_headline: "Tome Controle Total do Seu Dinheiro em Apenas 5 Minutos Por Dia",
+      subheadline: "A plataforma completa que organiza suas despesas, multiplica sua economia e transforma seu salário em liberdade financeira",
+      cta_button_text: "Comece Grátis Agora",
+      plan_name: "Plano Premium Anual",
+      plan_price: "R$ 29,90/mês",
+      guarantee_text: "🛡️ Garantia Incondicional de 30 Dias",
+      background_color: "#667eea",
+      surface_color: "#ffffff",
+      text_color: "#1f2937",
+      primary_action_color: "#7c3aed",
+      secondary_action_color: "#6366f1",
+      font_family: "system-ui",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const headline = document.getElementById('main-headline');
+      const subheadline = document.getElementById('subheadline');
+      const ctaHero = document.getElementById('cta-hero');
+      const ctaOffer = document.getElementById('cta-offer');
+      const ctaFinal = document.getElementById('cta-final');
+      const planName = document.getElementById('plan-name');
+      const planPrice = document.getElementById('plan-price');
+      const guaranteeText = document.getElementById('guarantee-text');
+
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      const baseSize = config.font_size || defaultConfig.font_size;
+
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+      if (headline) {
+        headline.textContent = config.main_headline || defaultConfig.main_headline;
+        headline.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        headline.style.fontSize = `${baseSize * 3.125}px`;
+      }
+      
+      if (subheadline) {
+        subheadline.textContent = config.subheadline || defaultConfig.subheadline;
+        subheadline.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        subheadline.style.fontSize = `${baseSize * 1.25}px`;
+      }
+      
+      const ctaText = config.cta_button_text || defaultConfig.cta_button_text;
+      if (ctaHero) {
+        ctaHero.textContent = ctaText;
+        ctaHero.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        ctaHero.style.fontSize = `${baseSize * 1.25}px`;
+        ctaHero.style.backgroundColor = surfaceColor;
+        ctaHero.style.color = primaryActionColor;
+      }
+      if (ctaOffer) {
+        ctaOffer.textContent = config.cta_button_text || 'Quero Organizar Minhas Finanças Agora';
+        ctaOffer.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        ctaOffer.style.fontSize = `${baseSize * 1.5}px`;
+        ctaOffer.style.background = `linear-gradient(to right, ${primaryActionColor}, ${secondaryActionColor})`;
+      }
+      if (ctaFinal) {
+        ctaFinal.textContent = config.cta_button_text || 'Sim, Quero Controlar Minhas Finanças Agora!';
+        ctaFinal.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        ctaFinal.style.fontSize = `${baseSize * 1.5}px`;
+        ctaFinal.style.backgroundColor = surfaceColor;
+        ctaFinal.style.color = primaryActionColor;
+      }
+      
+      if (planName) {
+        planName.textContent = config.plan_name || defaultConfig.plan_name;
+        planName.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        planName.style.fontSize = `${baseSize * 1.875}px`;
+        planName.style.color = textColor;
+      }
+      
+      if (planPrice) {
+        planPrice.textContent = config.plan_price || defaultConfig.plan_price;
+        planPrice.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        planPrice.style.fontSize = `${baseSize * 3.75}px`;
+        planPrice.style.color = primaryActionColor;
+      }
+      
+      if (guaranteeText) {
+        guaranteeText.textContent = config.guarantee_text || defaultConfig.guarantee_text;
+        guaranteeText.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        guaranteeText.style.fontSize = `${baseSize * 1.25}px`;
+        guaranteeText.style.color = textColor;
+      }
+
+      const gradientSections = document.querySelectorAll('.gradient-bg');
+      gradientSections.forEach(section => {
+        section.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, ${secondaryActionColor} 100%)`;
+      });
+
+      const allHeadings = document.querySelectorAll('h1, h2, h3, h4');
+      allHeadings.forEach(heading => {
+        heading.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      });
+
+      const allText = document.querySelectorAll('p, li, span, div');
+      allText.forEach(text => {
+        text.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.surface_color = value;
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.primary_action_color = value;
+                window.elementSdk.setConfig({ primary_action_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.secondary_action_color = value;
+                window.elementSdk.setConfig({ secondary_action_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            if (window.elementSdk) {
+              window.elementSdk.config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            if (window.elementSdk) {
+              window.elementSdk.config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["main_headline", config.main_headline || defaultConfig.main_headline],
+        ["subheadline", config.subheadline || defaultConfig.subheadline],
+        ["cta_button_text", config.cta_button_text || defaultConfig.cta_button_text],
+        ["plan_name", config.plan_name || defaultConfig.plan_name],
+        ["plan_price", config.plan_price || defaultConfig.plan_price],
+        ["guarantee_text", config.guarantee_text || defaultConfig.guarantee_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a4ca936e2c6577d',t:'MTc2NDE5NDQ1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
